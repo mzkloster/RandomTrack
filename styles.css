@@ -25,6 +25,10 @@ body {
     margin-bottom: 1rem;
 }
 
+img {
+    border-radius: 0.25rem;
+}
+
 .test-border {
     border: solid 5px red;
 }
