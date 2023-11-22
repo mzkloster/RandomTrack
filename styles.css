@@ -77,6 +77,7 @@ img {
     border-radius: 0.25rem;
     background-color: #e0e0e0;
     border: 3px solid gray;
+    margin-bottom: 2rem;
 }
 .cup-modal-cupLogo:hover {
     background-color: #c7c7c7;
@@ -91,12 +92,9 @@ img {
     font-size: 5rem;
 }
 
-/* .cup-modal-card {
-
-} */
-
 .ban-modal-card {
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 .grayscaled {
@@ -117,3 +115,11 @@ img {
     margin-top: 1rem;
 }
 
+.only-displayed-on-xxs {
+    display: none;
+}  
+@media only screen and (max-width: 518px) {
+    .only-displayed-on-xxs {
+      display: block;
+    }
+}
