@@ -1,0 +1,115 @@
+html {
+    height: 100%;
+    background-color:#ededed;
+}
+body {
+    /* height: 90%; */
+    background-color: #ededed !important;
+    color: #212529 !important;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-bottom: 2rem;
+}
+
+.jumbotron {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    min-height: 550px;
+}
+
+.logo-card {
+    width:300px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.test-border {
+    border: solid 5px red;
+}
+
+.btn:focus, i:focus, .btn-close:focus  {
+    box-shadow: none !important;
+}
+
+.btn-green{
+    background-color: green !important;
+    color: white !important;
+}
+.btn-green:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+}
+
+.center{
+    margin: auto;
+}
+
+.modal-arrow-icon {
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.fa-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.hamburger-menu {
+    text-align:left;    
+}
+
+.fa-bars {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.7rem;
+    cursor: pointer;
+}
+
+.cup-modal-cupLogo {
+    cursor: pointer;
+    padding-top: 1rem;
+    border-radius: 0.25rem;
+    background-color: #e0e0e0;
+    border: 3px solid gray;
+}
+.cup-modal-cupLogo:hover {
+    background-color: #c7c7c7;
+}
+
+.cup-modal-check {
+    color: green;
+    font-size: 5rem;
+}
+.cup-modal-x-icon {
+    color: #e72020;
+    font-size: 5rem;
+}
+
+/* .cup-modal-card {
+
+} */
+
+.ban-modal-card {
+    cursor: pointer;
+}
+
+.grayscaled {
+    filter: grayscale();
+}
+
+#cupsColumn img{
+    margin-top: 1rem;
+}
+#bansColumn img{
+    margin-top: 1rem;
+}
+#randomTrackColumn #randomTrackCupImage{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#itemBoxImage{
+    margin-top: 1rem;
+}
+
