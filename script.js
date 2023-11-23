@@ -146,9 +146,11 @@ function showThisCupInModal(cup){
 
 
 // On startup
-sessionStorage.setItem('game', JSON.stringify("MarioKartDoubleDash"));
-TracksMarioKartDoubleDash.addAllCupsToState();
-sessionStorage.setItem('bans', JSON.stringify([]));
+$(document).ready(function(){
+    sessionStorage.setItem('game', JSON.stringify("MarioKartDoubleDash"));
+    TracksMarioKartDoubleDash.addAllCupsToState();
+    sessionStorage.setItem('bans', JSON.stringify([]));
 
-setSelectedCupsLogos();
-setBansLogos();
+    setSelectedCupsLogos();
+    setBansLogos();
+});
