@@ -29,6 +29,10 @@ img {
     border-radius: 0.25rem;
 }
 
+.cup-logo-image {
+    height: 84px;
+}
+
 .test-border {
     border: solid 5px red;
 }
@@ -96,6 +100,8 @@ img {
 .cup-modal-x-icon {
     color: #e72020;
     font-size: 5rem;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
 }
 
 .ban-modal-card {
