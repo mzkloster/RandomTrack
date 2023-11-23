@@ -82,6 +82,12 @@ img {
 .cup-modal-cupLogo:hover {
     background-color: #c7c7c7;
 }
+.cup-modal-cupLogo img{
+    vertical-align: baseline;
+}
+.cup-modal-cupLogo i{
+    vertical-align: top;
+}
 
 .cup-modal-check {
     color: green;
