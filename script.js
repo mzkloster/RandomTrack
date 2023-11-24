@@ -18,6 +18,11 @@ $('#randomButton').on('click', function(event) {
     $('.random-track-images').fadeIn(2000);
 });
 
+$('#cupsColumn [data-bs-target="#cupsModal"]').on('click', function(event) {    
+    if (!isSelectedCupsSetInState()) {
+        TracksMarioKartDoubleDash.addAllCupsToState();
+    }
+});
 $('#resetCupsButton').on('click', function(event) {
     TracksMarioKartDoubleDash.addAllCupsToState();
     $('.cup-modal-cupLogo').children('img').removeClass("grayscaled");
@@ -27,6 +32,11 @@ $('#resetCupsButton').on('click', function(event) {
     setSelectedCupsLogos();
 });
 
+$('#bansColumn [data-bs-target="#bansModal"]').on('click', function(event) {    
+    if (!isBansSetInState()) {
+        sessionStorage.setItem('bans', JSON.stringify([]));
+    }
+});
 $('#resetBansButton').on('click', function(event) {
     TracksMarioKartDoubleDash.emptyBansInState();
     setHtmlContentForEmptyBans();
@@ -46,6 +56,7 @@ $('.cup-modal-cupLogo').on('click', function(event) {
     $(this).children('.cup-modal-check, .cup-modal-x-icon').toggleClass('d-none');
     $('.cup-modal-card[value="' + cup + '"]').toggleClass("grayscaled");
 });
+
 
 //Ban modal
 $('#bansModal .fa-chevron-right').on('click', function(event) {
@@ -143,6 +154,13 @@ function showThisCupInModal(cup){
 }
 
 
+function isSelectedCupsSetInState(){
+    return !(sessionStorage.getItem("selectedCups") === null);
+}
+
+function isBansSetInState(){
+    return !(sessionStorage.getItem("bans") === null);
+}
 
 
 // On startup
