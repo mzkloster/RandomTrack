@@ -135,3 +135,14 @@ img {
       display: block;
     }
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    /* background: transparent; */
+    background: #303030;
+}
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 0;
+}
